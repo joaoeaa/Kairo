@@ -231,11 +231,11 @@
     /* Funil: viu o formulário -> começou a preencher -> enviou */
     if ('IntersectionObserver' in window) {
       const seen = new IntersectionObserver((entries) => {
-        if (entries.some((en) => en.isIntersecting)) { track('formulario-visto'); seen.disconnect(); }
+        if (entries.some((en) => en.isIntersecting)) { track('Formulário 1: viu'); seen.disconnect(); }
       }, { threshold: 0.5 });
       seen.observe(form);
     }
-    form.addEventListener('focusin', () => track('formulario-iniciado'), { once: true });
+    form.addEventListener('focusin', () => track('Formulário 2: começou a preencher'), { once: true });
 
     const check = (field) => {
       const input = field.querySelector('input, select');
@@ -267,11 +267,11 @@
         const res = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
         if (!res.ok) throw new Error(String(res.status));
         form.classList.add('is-sent');
-        track('formulario-enviado', { cargo: form.elements.cargo.value });
+        track('Formulário 3: enviou', { cargo: form.elements.cargo.value });
         status.textContent = 'Interesse registrado.';
         form.querySelector('[data-sent]').focus();
       } catch (err) {
-        track('formulario-falhou', { motivo: err.message });
+        track('Formulário: erro no envio', { motivo: err.message });
         status.classList.add('is-error');
         status.textContent = 'O pedido não foi enviado. Confira a sua conexão e tente de novo.';
         button.disabled = false;

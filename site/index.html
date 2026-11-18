@@ -42,12 +42,12 @@
         <img src="brand/kairo-horizontal-escuro.svg" alt="Kairo" width="128" height="32">
       </a>
       <nav class="nav__links" aria-label="Seções">
-        <a href="#jornada" data-umami-event="menu" data-umami-event-secao="jornada" data-umami-event-local="topo">Jornada do aluno</a>
-        <a href="#faculdade" data-umami-event="menu" data-umami-event-secao="faculdade" data-umami-event-local="topo">Painel da faculdade</a>
-        <a href="#diferenciais" data-umami-event="menu" data-umami-event-secao="diferenciais" data-umami-event-local="topo">Diferenciais</a>
-        <a href="#parceiras" data-umami-event="menu" data-umami-event-secao="parceiras" data-umami-event-local="topo">Empresas parceiras</a>
+        <a href="#jornada" data-umami-event="Clicou no menu" data-umami-event-item="Jornada do aluno" data-umami-event-local="Menu do topo">Jornada do aluno</a>
+        <a href="#faculdade" data-umami-event="Clicou no menu" data-umami-event-item="Painel da faculdade" data-umami-event-local="Menu do topo">Painel da faculdade</a>
+        <a href="#diferenciais" data-umami-event="Clicou no menu" data-umami-event-item="Diferenciais" data-umami-event-local="Menu do topo">Diferenciais</a>
+        <a href="#parceiras" data-umami-event="Clicou no menu" data-umami-event-item="Empresas parceiras" data-umami-event-local="Menu do topo">Empresas parceiras</a>
       </nav>
-      <a class="btn btn--primary nav__cta" href="#contato" data-umami-event="quero-conhecer" data-umami-event-local="menu">Quero conhecer o Kairo</a>
+      <a class="btn btn--primary nav__cta" href="#contato" data-umami-event="Clicou em Quero conhecer" data-umami-event-local="Menu do topo">Quero conhecer o Kairo</a>
     </div>
   </header>
 
@@ -61,8 +61,8 @@
           <h1 id="hero-title" class="hero__title" data-enter>Prontidão profissional do 1º período ao primeiro estágio</h1>
           <p class="hero__lead" data-enter>O Kairo é a plataforma que a faculdade contrata para acompanhar cada aluno desde a entrada. A coordenação vê, turma a turma, quem está pronto para o mercado e o que falta para os outros.</p>
           <div class="hero__actions" data-enter>
-            <a class="btn btn--light" href="#contato" data-umami-event="quero-conhecer" data-umami-event-local="hero">Quero conhecer o Kairo</a>
-            <a class="link link--light" href="#problema" data-umami-event="ver-jornada">Ver a jornada de uma aluna <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg></a>
+            <a class="btn btn--light" href="#contato" data-umami-event="Clicou em Quero conhecer" data-umami-event-local="Início da página">Quero conhecer o Kairo</a>
+            <a class="link link--light" href="#problema" data-umami-event="Clicou em Ver a jornada">Ver a jornada de uma aluna <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg></a>
           </div>
         </div>
         <div class="hero__mark" aria-hidden="true">
@@ -463,20 +463,26 @@
           <p class="field__error" id="e-email" data-msg="Escreva um e-mail válido, como nome@faculdade.edu.br."></p>
         </div>
         <div class="field">
-          <label for="f-inst">Instituição</label>
+          <label for="f-inst">Faculdade ou empresa</label>
           <input id="f-inst" name="instituicao" type="text" autocomplete="organization" required aria-describedby="e-inst">
-          <p class="field__error" id="e-inst" data-msg="Escreva o nome da faculdade."></p>
+          <p class="field__error" id="e-inst" data-msg="Escreva o nome da faculdade ou da empresa."></p>
         </div>
         <div class="field">
-          <label for="f-cargo">Cargo</label>
+          <label for="f-cargo">Você é</label>
           <select id="f-cargo" name="cargo" required aria-describedby="e-cargo">
             <option value="">Selecione</option>
-            <option>Coordenação de curso</option>
-            <option>Núcleo de carreira ou empregabilidade</option>
-            <option>Gestão ou diretoria acadêmica</option>
-            <option>Outro</option>
+            <optgroup label="Da faculdade">
+              <option>Coordenação de curso</option>
+              <option>Núcleo de carreira ou empregabilidade</option>
+              <option>Gestão ou diretoria acadêmica</option>
+            </optgroup>
+            <optgroup label="Outros perfis">
+              <option>Estudante</option>
+              <option>Empresa interessada em parceria</option>
+              <option>Outro</option>
+            </optgroup>
           </select>
-          <p class="field__error" id="e-cargo" data-msg="Escolha o seu cargo."></p>
+          <p class="field__error" id="e-cargo" data-msg="Escolha uma opção."></p>
         </div>
         <button class="btn btn--primary form__submit" type="submit"><span>Quero conhecer o Kairo</span></button>
         <p class="form__status" role="status" aria-live="polite" data-status></p>
@@ -493,10 +499,10 @@
       <img src="brand/kairo-horizontal-escuro.svg" alt="Kairo" width="112" height="28">
       <div class="closing__nav">
         <nav class="closing__links" aria-label="Rodapé">
-          <a href="#jornada" data-umami-event="menu" data-umami-event-secao="jornada" data-umami-event-local="rodape">Jornada do aluno</a>
-          <a href="#faculdade" data-umami-event="menu" data-umami-event-secao="faculdade" data-umami-event-local="rodape">Painel da faculdade</a>
-          <a href="#diferenciais" data-umami-event="menu" data-umami-event-secao="diferenciais" data-umami-event-local="rodape">Diferenciais</a>
-          <a href="#parceiras" data-umami-event="menu" data-umami-event-secao="parceiras" data-umami-event-local="rodape">Empresas parceiras</a>
+          <a href="#jornada" data-umami-event="Clicou no menu" data-umami-event-item="Jornada do aluno" data-umami-event-local="Rodapé">Jornada do aluno</a>
+          <a href="#faculdade" data-umami-event="Clicou no menu" data-umami-event-item="Painel da faculdade" data-umami-event-local="Rodapé">Painel da faculdade</a>
+          <a href="#diferenciais" data-umami-event="Clicou no menu" data-umami-event-item="Diferenciais" data-umami-event-local="Rodapé">Diferenciais</a>
+          <a href="#parceiras" data-umami-event="Clicou no menu" data-umami-event-item="Empresas parceiras" data-umami-event-local="Rodapé">Empresas parceiras</a>
         </nav>
         <p class="closing__legal">© 2026 Kairo</p>
       </div>
