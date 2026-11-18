@@ -352,7 +352,11 @@ h2 + .lead { margin-top: 20px; }
   .story__grid { display: block; }
   .story__intro { min-height: 0; padding-top: 0; padding-bottom: 32px; }
   .story__stage { position: sticky; top: var(--nav); z-index: 2; background: var(--white); padding: 8px 0 12px; margin: 0 calc(-1 * var(--gut)); padding-inline: var(--gut); box-shadow: 0 1px 0 var(--line); }
-  .stage { position: relative; top: 0; max-height: calc(64svh - var(--nav)); overflow: hidden; padding: 16px; border-radius: var(--r); }
+  .stage { position: relative; top: 0; max-height: calc(60svh - var(--nav)); overflow: hidden; padding: 16px; border-radius: var(--r); }
+  /* Telas com rolagem interna: o topo (anel e nome) fica fixo, só o conteúdo da etapa rola */
+  .stage__screens { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior-y: auto; align-content: start; }
+  .stage__screens.has-more { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); }
+  .scr:not(.is-active) { position: absolute; inset: 0; overflow: hidden; }
   .stage__head { gap: 16px; padding-bottom: 14px; }
   .stage__ring { width: 84px; }
   .stage__pct { font-size: 1.0625rem; }

@@ -24,6 +24,19 @@
   const periodEl = document.querySelector('[data-period]');
   const rail = [...document.querySelectorAll('[data-rail] li')];
   const screens = [...document.querySelectorAll('[data-screen]')];
+  const screensBox = document.querySelector('.stage__screens');
+
+  /* No celular as telas rolam por dentro; o esmaecido embaixo indica que há mais conteúdo */
+  function updateMore() {
+    if (!screensBox) return;
+    const more = screensBox.scrollHeight - screensBox.clientHeight - screensBox.scrollTop > 4;
+    screensBox.classList.toggle('has-more', more);
+  }
+  if (screensBox) {
+    screensBox.addEventListener('scroll', updateMore, { passive: true });
+    addEventListener('resize', updateMore);
+    addEventListener('load', updateMore);
+  }
 
   let target = 0;
   let shown = 0;
@@ -36,6 +49,7 @@
     active = i;
     steps.forEach((s, k) => s.classList.toggle('is-active', k === i));
     screens.forEach((s, k) => s.classList.toggle('is-active', k === Math.max(0, i)));
+    if (screensBox) { screensBox.scrollTop = 0; requestAnimationFrame(updateMore); }
   }
 
   function setPeriod(p) {
