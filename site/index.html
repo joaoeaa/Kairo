@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kairo · Prontidão profissional do 1º período ao primeiro estágio</title>
+  <meta name="description" content="Plataforma que a faculdade contrata para acompanhar cada aluno do 1º período até o primeiro estágio, com diagnóstico, plano por semestre, tutor de IA e painel por turma.">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta name="theme-color" content="#123C3F">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Kairo · Prontidão profissional do 1º período ao primeiro estágio">
+  <meta property="og:description" content="Saiba quais alunos estão prontos para o mercado enquanto ainda dá tempo de agir. Diagnóstico, plano por semestre, tutor de IA e painel por turma.">
+  <meta property="og:image" content="brand/kairo-banner-1600x500.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="kairo-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="kairo-favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="kairo-favicon-512.png">
+  <link rel="preload" href="fonts/source-sans-pro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-pro-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js', 'm-enter')</script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="fe336f4c-7bbe-4ae4-8225-28ae98986966"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 20 20"><path d="M4.5 10.5l3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gap" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 6.8v3.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="13.4" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11M11 5.5l4.5 4.5-4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 20 20"><path d="M10 4v11M5.5 11l4.5 4.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 20 20"><path d="M5.5 13.5V9a4.5 4.5 0 019 0v4.5l1.5 1.5h-12z M8.3 16.5a1.8 1.8 0 003.4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="ring-path" viewBox="-29 -29 58 58"><path d="M22.95 -7.02A24 24 0 1 1 7.02 -22.95"/></symbol>
+  </svg>
+
+  <header class="nav" data-nav>
+    <div class="wrap nav__row">
+      <a class="nav__brand" href="#topo" aria-label="Kairo, voltar ao início">
+        <img src="brand/kairo-horizontal-escuro.svg" alt="Kairo" width="128" height="32">
+      </a>
+      <nav class="nav__links" aria-label="Seções">
+        <a href="#jornada" data-umami-event="menu" data-umami-event-secao="jornada" data-umami-event-local="topo">Jornada do aluno</a>
+        <a href="#faculdade" data-umami-event="menu" data-umami-event-secao="faculdade" data-umami-event-local="topo">Painel da faculdade</a>
+        <a href="#diferenciais" data-umami-event="menu" data-umami-event-secao="diferenciais" data-umami-event-local="topo">Diferenciais</a>
+        <a href="#parceiras" data-umami-event="menu" data-umami-event-secao="parceiras" data-umami-event-local="topo">Empresas parceiras</a>
+      </nav>
+      <a class="btn btn--primary nav__cta" href="#contato" data-umami-event="quero-conhecer" data-umami-event-local="menu">Quero conhecer o Kairo</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section class="hero" id="topo" aria-labelledby="hero-title" data-enter>
+      <img class="layer" src="img/linhas-hero.svg" alt="" aria-hidden="true">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1 id="hero-title" class="hero__title" data-enter>Prontidão profissional do 1º período ao primeiro estágio</h1>
+          <p class="hero__lead" data-enter>O Kairo é a plataforma que a faculdade contrata para acompanhar cada aluno desde a entrada. A coordenação vê, turma a turma, quem está pronto para o mercado e o que falta para os outros.</p>
+          <div class="hero__actions" data-enter>
+            <a class="btn btn--light" href="#contato" data-umami-event="quero-conhecer" data-umami-event-local="hero">Quero conhecer o Kairo</a>
+            <a class="link link--light" href="#problema" data-umami-event="ver-jornada">Ver a jornada de uma aluna <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg></a>
+          </div>
+        </div>
+        <div class="hero__mark" aria-hidden="true">
+          <svg class="hero__halo" viewBox="0 0 100 100"><circle cx="50" cy="50" r="49.6"/></svg>
+          <svg class="hero__dots" viewBox="0 0 90 90"><g><circle cx="5" cy="5" r="1.6"/><circle cx="25" cy="5" r="1.6"/><circle cx="45" cy="5" r="1.6"/><circle cx="65" cy="5" r="1.6"/><circle cx="85" cy="5" r="1.6"/><circle cx="5" cy="25" r="1.6"/><circle cx="25" cy="25" r="1.6"/><circle cx="45" cy="25" r="1.6"/><circle cx="65" cy="25" r="1.6"/><circle cx="85" cy="25" r="1.6"/><circle cx="5" cy="45" r="1.6"/><circle cx="25" cy="45" r="1.6"/><circle cx="45" cy="45" r="1.6"/><circle cx="65" cy="45" r="1.6"/><circle cx="85" cy="45" r="1.6"/><circle cx="5" cy="65" r="1.6"/><circle cx="25" cy="65" r="1.6"/><circle cx="45" cy="65" r="1.6"/><circle cx="65" cy="65" r="1.6"/><circle cx="85" cy="65" r="1.6"/><circle cx="5" cy="85" r="1.6"/><circle cx="25" cy="85" r="1.6"/><circle cx="45" cy="85" r="1.6"/><circle cx="65" cy="85" r="1.6"/><circle cx="85" cy="85" r="1.6"/></g></svg>
+          <img class="hero__symbol" src="brand/kairo-simbolo-claro.svg" alt="" width="480" height="480">
+        </div>
+      </div>
+    </section>
+
+    <!-- O problema -->
+    <section class="section" id="problema" aria-labelledby="problema-title">
+      <div class="wrap split">
+        <div class="split__text">
+          <h2 id="problema-title">A faculdade descobre no 8º período quem não está pronto</h2>
+          <p class="lead">Sem acompanhamento ao longo do curso, o aluno chega ao fim sem saber o que as vagas pedem. E a coordenação não tem dado para mostrar a empregabilidade da turma.</p>
+          <p class="split__note">Lívia Moura, ao lado, é uma aluna fictícia.</p>
+          <p class="split__next">A seguir, a mesma aluna com o Kairo desde o 1º período.</p>
+        </div>
+        <div class="split__visual">
+          <div class="panel panel--profile">
+            <div class="profile">
+              <svg class="ring ring--unknown" viewBox="-29 -29 58 58" aria-hidden="true">
+                <path class="ring__track" d="M22.95 -7.02A24 24 0 1 1 7.02 -22.95" pathLength="100"/>
+              </svg>
+              <div class="profile__id">
+                <p class="profile__name">Lívia Moura</p>
+                <p class="profile__meta">Ciência da Computação · 8º período</p>
+                <p class="profile__status">Prontidão sem medição</p>
+              </div>
+            </div>
+            <dl class="facts">
+              <div class="facts__row"><dt>Formatura</dt><dd>em 4 meses</dd></div>
+              <div class="facts__row"><dt>Experiências no currículo</dt><dd>1</dd></div>
+              <div class="facts__row"><dt>Área de interesse</dt><dd class="is-gap">não definida</dd></div>
+              <div class="facts__row"><dt>Requisitos das vagas que atende</dt><dd class="is-gap">não sabe</dd></div>
+              <div class="facts__row"><dt>Plano até o estágio</dt><dd class="is-gap">nenhum</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A jornada (scrollytelling) -->
+    <section class="story" id="jornada" aria-labelledby="jornada-title" data-moment="anel-de-prontidao">
+      <div class="wrap story__grid">
+
+        <div class="story__stage" aria-hidden="true">
+          <div class="stage" data-stage>
+            <div class="stage__head">
+              <div class="stage__ring">
+                <svg class="ring ring--stage" viewBox="-29 -29 58 58">
+                  <path class="ring__track" d="M22.95 -7.02A24 24 0 1 1 7.02 -22.95" pathLength="100"/>
+                  <path class="ring__fill" data-ring-fill d="M22.95 -7.02A24 24 0 1 1 7.02 -22.95" pathLength="100"/>
+                  <circle class="ring__dot" data-ring-dot cx="16.97" cy="-16.97" r="7"/>
+                </svg>
+                <span class="stage__pct" data-pct>0%</span>
+              </div>
+              <div class="stage__id">
+                <p class="stage__name">Lívia Moura</p>
+                <p class="stage__meta"><span class="hide-sm">Ciência da </span>Computação · <span data-period>1º período</span></p>
+                <ol class="rail" data-rail>
+                  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                </ol>
+                <p class="stage__label">Meta: estágio em desenvolvimento de sistemas</p>
+              </div>
+            </div>
+
+            <div class="stage__screens">
+              <!-- 1 Diagnóstico -->
+              <div class="scr is-active" data-screen="0">
+                <div class="scr__head"><p class="scr__title">Diagnóstico inicial</p><p class="scr__meta">Concluído na 1ª semana</p></div>
+                <ul class="bars">
+                  <li><span>Programação</span><i style="--v:72"></i><b>72</b></li>
+                  <li><span>Comunicação</span><i style="--v:58"></i><b>58</b></li>
+                  <li><span>Inglês</span><i style="--v:41"></i><b>41</b></li>
+                  <li><span>Banco de dados</span><i style="--v:28"></i><b>28</b></li>
+                  <li><span>Testes de software</span><i style="--v:15"></i><b>15</b></li>
+                </ul>
+                <p class="scr__sub">Área escolhida</p>
+                <div class="chips">
+                  <span class="chip chip--on"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Desenvolvimento de sistemas</span>
+                  <span class="chip">Sites e aplicativos</span>
+                  <span class="chip chip--more">Análise de dados</span>
+                </div>
+              </div>
+
+              <!-- 2 Experiências e desafios -->
+              <div class="scr" data-screen="1">
+                <div class="scr__head"><p class="scr__title">Experiências registradas</p><p class="scr__meta">3 no perfil</p></div>
+                <ul class="rows">
+                  <li><span class="rows__main">Monitoria de Programação</span><span class="rows__side">2º período</span></li>
+                  <li><span class="rows__main">Site de ONG do bairro, projeto de extensão</span><span class="rows__side">3º período</span></li>
+                  <li class="rows--more"><span class="rows__main">Curso de programação em Python, 40 h</span><span class="rows__side">3º período</span></li>
+                </ul>
+                <div class="challenge">
+                  <p class="challenge__org">Desafio de banco digital parceiro</p>
+                  <p class="challenge__title">Sistema que confere os pagamentos do dia sem planilha</p>
+                  <p class="tag tag--ok"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Entregue · avaliação 8,7</p>
+                </div>
+              </div>
+
+              <!-- 3 Plano por semestre -->
+              <div class="scr" data-screen="2">
+                <div class="scr__head"><p class="scr__title">Plano por semestre</p><p class="scr__meta">Revisado no 4º período</p></div>
+                <ol class="plan">
+                  <li class="plan__term"><span class="plan__when">4º</span>
+                    <ul><li class="is-done"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Curso de banco de dados</li><li class="is-done"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Segundo desafio de empresa</li></ul></li>
+                  <li class="plan__term"><span class="plan__when">5º</span>
+                    <ul><li>Inglês até o nível B2</li><li>Trilha de entrevista técnica com o tutor</li></ul></li>
+                  <li class="plan__term"><span class="plan__when">6º</span>
+                    <ul><li>Candidaturas a estágio em desenvolvimento</li></ul></li>
+                  <li class="plan__term plan--more"><span class="plan__when">7º</span>
+                    <ul><li>Estágio na área escolhida</li></ul></li>
+                </ol>
+              </div>
+
+              <!-- 4 Tutor de IA -->
+              <div class="scr" data-screen="3">
+                <div class="scr__head"><p class="scr__title">Tutor de IA</p><p class="scr__meta">Trilha: entrevista técnica</p></div>
+                <div class="chat">
+                  <p class="msg msg--tutor">Vamos treinar uma pergunta comum em entrevistas: conte um sistema que você construiu do zero.</p>
+                  <p class="msg msg--me">No desafio do banco digital, criei um sistema que confere os pagamentos do dia sem planilha.</p>
+                  <p class="msg msg--tutor">Boa estrutura. Falta o resultado em número: quantas horas de trabalho manual o sistema economizou?</p>
+                </div>
+                <div class="progress"><span>Etapa 4 de 6</span><i style="--v:66"></i></div>
+              </div>
+
+              <!-- 5 Alerta de vaga -->
+              <div class="scr" data-screen="4">
+                <div class="scr__head"><p class="scr__title"><svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg>Estágio em desenvolvimento de sistemas</p><p class="scr__meta">Banco digital parceiro · 6 h por dia</p></div>
+                <p class="match"><b>Você atende 5 de 7 requisitos</b></p>
+                <ul class="reqs">
+                  <li class="is-ok"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Programação em Python</li>
+                  <li class="is-ok"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Banco de dados (SQL)</li>
+                  <li class="is-ok"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Projeto feito para empresa real</li>
+                  <li class="is-ok reqs--more"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Controle de versão (Git)</li>
+                  <li class="is-ok reqs--more"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Disponibilidade de 6 h</li>
+                  <li class="reqs__sum"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>+ 2 requisitos atendidos</li>
+                  <li class="is-gap"><svg class="ico" aria-hidden="true"><use href="#i-gap"/></svg>Publicar sistemas na nuvem <span>trilha de 3 semanas</span></li>
+                  <li class="is-gap"><svg class="ico" aria-hidden="true"><use href="#i-gap"/></svg>Entrevista técnica em inglês <span>simulação com o tutor</span></li>
+                </ul>
+              </div>
+
+              <!-- 6 Contratada -->
+              <div class="scr" data-screen="5">
+                <div class="hired">
+                  <span class="hired__badge"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  <div>
+                    <p class="scr__title">Contratada</p>
+                    <p class="scr__meta">Estágio em desenvolvimento de sistemas · início em março</p>
+                  </div>
+                </div>
+                <dl class="facts facts--tight">
+                  <div class="facts__row"><dt>Semestres no Kairo</dt><dd>7</dd></div>
+                  <div class="facts__row"><dt>Experiências registradas</dt><dd>9</dd></div>
+                  <div class="facts__row"><dt>Desafios de empresas parceiras</dt><dd>3</dd></div>
+                  <div class="facts__row"><dt>Trilhas concluídas com o tutor</dt><dd>2</dd></div>
+                  <div class="facts__row facts--more"><dt>Alertas de vaga recebidos</dt><dd>4</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story__steps">
+          <div class="story__intro">
+            <h2 id="jornada-title">A jornada de uma aluna até o primeiro estágio</h2>
+            <p class="lead">Acompanhe a Lívia, de Ciência da Computação. A jornada é a mesma em qualquer curso. Conforme você rola, o anel de prontidão do Kairo se fecha.</p>
+          </div>
+
+          <article class="step" data-value="12" data-period="1">
+            <h3>Diagnóstico e escolha de área no 1º período</h3>
+            <p>Na primeira semana, a Lívia faz o diagnóstico de competências e escolhe a área que quer seguir. É o ponto de partida do anel.</p>
+          </article>
+          <article class="step" data-value="31" data-period="3">
+            <h3>Experiências e desafios de empresas parceiras</h3>
+            <p>Monitoria, projetos de extensão e cursos entram no perfil. Empresas parceiras publicam desafios reais, e cada entrega avaliada soma prontidão.</p>
+          </article>
+          <article class="step" data-value="48" data-period="4">
+            <h3>Um plano para cada semestre</h3>
+            <p>O plano diz o que fazer em cada período, de acordo com a área escolhida e com o que as vagas pedem. A Lívia sabe o próximo passo.</p>
+          </article>
+          <article class="step" data-value="67" data-period="5">
+            <h3>Trilha de preparação com o tutor de IA</h3>
+            <p>A partir das lacunas do diagnóstico, o tutor de IA monta uma trilha de preparação e dá retorno em cada exercício, no ritmo da aluna.</p>
+          </article>
+          <article class="step" data-value="84" data-period="6">
+            <h3>Alerta de vaga com o que ela já atende</h3>
+            <p>Quando abre uma vaga na área, o alerta separa os requisitos: o que a Lívia já atende e o que falta, com a trilha para fechar cada lacuna.</p>
+          </article>
+          <article class="step" data-value="100" data-period="7">
+            <h3>Contratada no 7º período</h3>
+            <p>A Lívia começa o estágio com o anel completo. Para a faculdade, é um resultado registrado, com o caminho inteiro que levou até ele.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- A câmera vira: painel da turma -->
+    <section class="turma" id="faculdade" aria-labelledby="turma-title" data-turma data-moment="camera-da-turma">
+      <div class="turma__pin">
+        <img class="layer" src="img/linhas-turma.svg" alt="" aria-hidden="true">
+        <div class="wrap split split--dark">
+          <div class="split__text">
+            <h2 id="turma-title">O mesmo anel, visto pela coordenação</h2>
+            <p class="lead">No painel da turma, cada aluno é um anel. A Lívia é um deles, e a coordenação acompanha os 48 de uma vez, no semestre em que ainda dá para agir.</p>
+            <ul class="legend" data-legend>
+              <li><i class="legend__key legend__key--ready"></i><b data-count="ready">26</b> prontos para estágio</li>
+              <li><i class="legend__key legend__key--prep"></i><b data-count="prep">14</b> em preparação</li>
+              <li><i class="legend__key legend__key--alert"></i><b data-count="alert">8</b> precisam de atenção</li>
+            </ul>
+          </div>
+          <div class="split__visual">
+            <div class="board">
+              <div class="board__head">
+                <p class="board__title">Ciência da Computação · ingresso 2023.1</p>
+                <p class="board__meta">Turma de exemplo · 48 alunos · 7º período</p>
+              </div>
+              <div class="board__view">
+                <div class="board__grid" data-grid aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gargalos -->
+    <section class="section" id="gargalos" aria-labelledby="gargalos-title">
+      <div class="wrap split">
+        <div class="split__text">
+          <h2 id="gargalos-title">Os gargalos da turma, enquanto ainda dá tempo</h2>
+          <p class="lead">O painel mostra em que ponto os alunos travam: inglês, experiência, desafios e trilhas paradas. A coordenação vê isso semestre a semestre, com tempo para agir antes da formatura.</p>
+        </div>
+        <div class="split__visual">
+          <div class="panel">
+            <div class="panel__head"><p class="panel__title">Gargalos da turma</p><p class="panel__meta">Turma de exemplo · alunos afetados, de 48</p></div>
+            <ul class="hbars">
+              <li class="is-top"><span class="hbars__label">Inglês abaixo do pedido nas vagas da área</span><span class="hbars__bar"><i style="--v:35.4"></i></span><b>17</b><span class="hbars__note">Pedido em 9 de 12 vagas abertas na área</span></li>
+              <li><span class="hbars__label">Nenhum desafio de empresa entregue</span><span class="hbars__bar"><i style="--v:22.9"></i></span><b>11</b><span class="hbars__note">6 desafios abertos na área desses alunos</span></li>
+              <li><span class="hbars__label">Nenhuma experiência registrada</span><span class="hbars__bar"><i style="--v:16.7"></i></span><b>8</b><span class="hbars__note">Sem monitoria, curso, projeto ou estágio no perfil</span></li>
+              <li><span class="hbars__label">Trilha do tutor parada há mais de 30 dias</span><span class="hbars__bar"><i style="--v:12.5"></i></span><b>6</b><span class="hbars__note">Parada mais comum: simulação de entrevista</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultados de estágio -->
+    <section class="section" id="resultados" aria-labelledby="resultados-title">
+      <div class="wrap split">
+        <div class="split__text">
+          <h2 id="resultados-title">Resultados de estágio por turma e por área</h2>
+          <p class="lead">Cada contratação fica registrada com o caminho que levou até ela. É o dado de empregabilidade que a faculdade leva à diretoria e mostra aos futuros alunos.</p>
+        </div>
+        <div class="split__visual">
+          <div class="panel">
+            <div class="panel__head"><p class="panel__title">Alunos em estágio, por período</p><p class="panel__meta">Turma de exemplo · 48 alunos</p></div>
+            <div class="results">
+              <div class="vbars" role="img" aria-label="Alunos em estágio: 1 no 4º período, 4 no 5º, 9 no 6º e 19 no 7º.">
+                <div class="vbars__col"><b>1</b><i style="--v:5.3"></i><span>4º</span></div>
+                <div class="vbars__col"><b>4</b><i style="--v:21"></i><span>5º</span></div>
+                <div class="vbars__col"><b>9</b><i style="--v:47.4"></i><span>6º</span></div>
+                <div class="vbars__col is-now"><b>19</b><i style="--v:100"></i><span>7º</span></div>
+              </div>
+              <div class="results__side">
+                <p class="results__sub">Em estágio, por área</p>
+                <dl class="facts facts--tight">
+                <div class="facts__row"><dt>Desenvolvimento de sistemas</dt><dd>7</dd></div>
+                <div class="facts__row"><dt>Sites e aplicativos</dt><dd>5</dd></div>
+                <div class="facts__row"><dt>Análise de dados</dt><dd>4</dd></div>
+                <div class="facts__row"><dt>Infraestrutura e nuvem</dt><dd>3</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="section" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="wrap compare-wrap">
+        <div class="section__head">
+          <h2 id="diferenciais-title">O que muda com o Kairo</h2>
+          <p class="lead">Portal de vagas, feira de carreira e planilha do núcleo entram em cena no fim do curso. O Kairo acompanha o aluno desde a entrada e mostra à coordenação o caminho inteiro.</p>
+        </div>
+        <div class="compare-scroll">
+          <table class="compare">
+            <caption class="sr-only">Comparação entre as ferramentas usadas hoje e o Kairo</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col"><span class="compare__col">Hoje</span><span class="compare__sub">Portal de vagas, feira de carreira, planilha do núcleo</span></th>
+                <th scope="col" class="compare__kairo"><span class="compare__col"><img src="brand/kairo-simbolo-escuro.svg" alt="" width="20" height="20">Com o Kairo</span><span class="compare__sub">Do 1º período ao primeiro estágio</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Quando começa</th>
+                <td data-label="Hoje">No fim do curso, quando o aluno sai em busca de estágio</td>
+                <td class="compare__kairo" data-label="Com o Kairo">No 1º período, com o diagnóstico de competências</td>
+              </tr>
+              <tr>
+                <th scope="row">O que acompanha</th>
+                <td data-label="Hoje">Currículo e candidaturas enviadas</td>
+                <td class="compare__kairo" data-label="Com o Kairo">A prontidão do aluno, semestre a semestre</td>
+              </tr>
+              <tr>
+                <th scope="row">Como o aluno vê a vaga</th>
+                <td data-label="Hoje">Uma lista de requisitos</td>
+                <td class="compare__kairo" data-label="Com o Kairo">O que já atende e o que falta, com a trilha para cada lacuna</td>
+              </tr>
+              <tr>
+                <th scope="row">O que a coordenação vê</th>
+                <td data-label="Hoje">Só o que o aluno informa, quando informa</td>
+                <td class="compare__kairo" data-label="Com o Kairo">Cada turma, com os gargalos e os resultados de estágio</td>
+              </tr>
+              <tr>
+                <th scope="row">O que a empresa recebe</th>
+                <td data-label="Hoje">Currículos para triar</td>
+                <td class="compare__kairo" data-label="Com o Kairo">Candidatos que já atendem aos requisitos, com o histórico de desafios</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresas parceiras -->
+    <section class="section" id="parceiras" aria-labelledby="parceiras-title">
+      <div class="wrap">
+        <div class="split">
+          <div class="split__text">
+            <h2 id="parceiras-title">Empresas parceiras entram com desafios e vagas</h2>
+            <p class="lead">A rede de empresas parceiras liga a faculdade ao mercado. Cada parceria segue o mesmo caminho da jornada da Lívia.</p>
+          </div>
+          <div class="split__visual">
+            <div class="panel partner">
+              <div class="panel__head"><p class="panel__title">Visão da empresa parceira</p><p class="panel__meta">Exemplo · banco digital</p></div>
+              <div class="partner__row">
+                <div>
+                  <p class="partner__kind">Desafio publicado</p>
+                  <p class="partner__title">Sistema que confere pagamentos</p>
+                </div>
+                <p class="partner__num"><b>14</b> entregas</p>
+              </div>
+              <div class="partner__row">
+                <div>
+                  <p class="partner__kind">Vaga aberta</p>
+                  <p class="partner__title">Estágio em desenvolvimento de sistemas</p>
+                </div>
+                <p class="partner__num"><b>6</b> atendem a todos os requisitos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="flow" data-flow>
+          <li class="flow__stop">
+            <span class="flow__node" aria-hidden="true"></span>
+            <h3>Publica um desafio real</h3>
+            <p>A empresa descreve um problema da operação. Alunos da área resolvem, e a empresa avalia as entregas.</p>
+          </li>
+          <li class="flow__stop">
+            <span class="flow__node" aria-hidden="true"></span>
+            <h3>Abre uma vaga de estágio</h3>
+            <p>Os requisitos da vaga viram critérios no Kairo, e cada aluno vê o que já atende e o que falta.</p>
+          </li>
+          <li class="flow__stop">
+            <span class="flow__node flow__node--end" aria-hidden="true"></span>
+            <h3>Recebe candidatos prontos</h3>
+            <p>A empresa conhece quem atende aos requisitos, com o histórico de desafios e experiências de cada um.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA e rodapé -->
+  <footer class="closing" id="contato" aria-labelledby="contato-title">
+    <div class="wrap closing__grid">
+      <div class="closing__text">
+        <h2 id="contato-title">Conheça o Kairo antes do lançamento</h2>
+        <p class="lead">O Kairo está em desenvolvimento. Deixe o seu contato para conversar com a equipe sobre os cursos e as metas de empregabilidade da sua instituição.</p>
+      </div>
+      <form class="form" name="interesse" method="POST" action="/obrigado.html" data-netlify="true" netlify-honeypot="empresa-site" novalidate data-form>
+        <input type="hidden" name="form-name" value="interesse">
+        <p class="form__trap" hidden><label>Não preencha <input name="empresa-site" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field">
+          <label for="f-nome">Nome</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" required aria-describedby="e-nome">
+          <p class="field__error" id="e-nome" data-msg="Escreva o seu nome."></p>
+        </div>
+        <div class="field">
+          <label for="f-email">E-mail institucional</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+          <p class="field__error" id="e-email" data-msg="Escreva um e-mail válido, como nome@faculdade.edu.br."></p>
+        </div>
+        <div class="field">
+          <label for="f-inst">Instituição</label>
+          <input id="f-inst" name="instituicao" type="text" autocomplete="organization" required aria-describedby="e-inst">
+          <p class="field__error" id="e-inst" data-msg="Escreva o nome da faculdade."></p>
+        </div>
+        <div class="field">
+          <label for="f-cargo">Cargo</label>
+          <select id="f-cargo" name="cargo" required aria-describedby="e-cargo">
+            <option value="">Selecione</option>
+            <option>Coordenação de curso</option>
+            <option>Núcleo de carreira ou empregabilidade</option>
+            <option>Gestão ou diretoria acadêmica</option>
+            <option>Outro</option>
+          </select>
+          <p class="field__error" id="e-cargo" data-msg="Escolha o seu cargo."></p>
+        </div>
+        <button class="btn btn--primary form__submit" type="submit"><span>Quero conhecer o Kairo</span></button>
+        <p class="form__status" role="status" aria-live="polite" data-status></p>
+        <div class="form__sent" tabindex="-1" data-sent>
+          <img src="brand/kairo-simbolo-escuro.svg" alt="" width="64" height="64">
+          <div>
+            <p class="form__sent-title">Interesse registrado</p>
+            <p class="form__sent-text">Vamos entrar em contato pelo e-mail institucional que você informou.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="wrap closing__foot">
+      <img src="brand/kairo-horizontal-escuro.svg" alt="Kairo" width="112" height="28">
+      <div class="closing__nav">
+        <nav class="closing__links" aria-label="Rodapé">
+          <a href="#jornada" data-umami-event="menu" data-umami-event-secao="jornada" data-umami-event-local="rodape">Jornada do aluno</a>
+          <a href="#faculdade" data-umami-event="menu" data-umami-event-secao="faculdade" data-umami-event-local="rodape">Painel da faculdade</a>
+          <a href="#diferenciais" data-umami-event="menu" data-umami-event-secao="diferenciais" data-umami-event-local="rodape">Diferenciais</a>
+          <a href="#parceiras" data-umami-event="menu" data-umami-event-secao="parceiras" data-umami-event-local="rodape">Empresas parceiras</a>
+        </nav>
+        <p class="closing__legal">© 2026 Kairo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Documentos internos (ficam só na máquina, não vão para o repositório público)
+PRODUCT.md
+DESIGN.md
+NOTAS.md
+_identidade/
+
+# Estado das ferramentas de design
+.impeccable/
+site/.taste-skill/
+
+# Capturas de tela das revisões
+shots/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
