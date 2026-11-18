@@ -21,7 +21,7 @@ site/
 ├── main.js         animação do anel de prontidão, painel da turma e formulário
 ├── brand/          logos e banner
 ├── fonts/          Source Sans Pro 400, 600 e 700
-└── img/            ilustrações de fundo
+└── img/            ilustrações de fundo e imagem de compartilhamento
 ```
 
 ## Rodar localmente
