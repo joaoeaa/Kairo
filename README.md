@@ -13,12 +13,12 @@ Site estático em HTML, CSS e JavaScript, sem framework e sem etapa de build.
 ## Estrutura
 
 ```
+netlify.toml        configuração do Netlify (pasta publicada e cabeçalhos)
 site/
 ├── index.html      página principal
 ├── obrigado.html   confirmação do formulário (quando o JavaScript está desativado)
 ├── styles.css      identidade visual e layout
 ├── main.js         animação do anel de prontidão, painel da turma e formulário
-├── netlify.toml    cabeçalhos de cache e segurança
 ├── brand/          logos e banner
 ├── fonts/          Source Sans Pro 400, 600 e 700
 └── img/            ilustrações de fundo
